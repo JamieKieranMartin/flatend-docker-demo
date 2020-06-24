@@ -26,6 +26,7 @@ func main() {
 			},
 		},
 	}
+
 	check(node.Start("127.0.0.1:9000"))
 
 	ch := make(chan os.Signal, 1)
