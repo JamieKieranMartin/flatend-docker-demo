@@ -27,7 +27,7 @@ func main() {
 		},
 	}
 
-	check(node.Start("127.0.0.1:9000"))
+	check(node.Start("10.104.0.2:9000"))
 
 	ch := make(chan os.Signal, 1)
 	signal.Notify(ch, os.Interrupt)
