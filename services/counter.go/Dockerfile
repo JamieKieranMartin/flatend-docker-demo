@@ -1,4 +1,4 @@
-FROM golang
+FROM golang:latest
 # We copy everything into an app directory
 WORKDIR /app
 COPY . .

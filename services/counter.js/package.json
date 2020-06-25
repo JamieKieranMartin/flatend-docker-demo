@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
+    "start": "node ./src/main.js",
     "start:dev": "npx nodemon",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint . --ext .js",
-    "lint-and-fix": "eslint . --ext .js --fix",
-    "prettier-format": "prettier --config .prettierrc 'src/**/*.js' --write",
-    "prettier-watch": "onchange 'src/**/*.js' -- prettier --write {{changed}}"
+    "lint": "npx eslint . --ext .js",
+    "lint-and-fix": "npx eslint . --ext .js --fix",
+    "prettier-format": "npx prettier --config .prettierrc 'src/**/*.js' --write",
+    "prettier-watch": "npx onchange 'src/**/*.js' -- prettier --write {{changed}}"
   },
   "dependencies": {
     "flatend": "0.0.7"
